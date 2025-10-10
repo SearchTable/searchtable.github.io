@@ -1,4 +1,4 @@
-$uploaddir = 'https://searchtable.github.io/uploads/';
+$uploaddir = '/uploads/';
 if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploaddir.
     $_FILES['userfile']['name'])) {
         print "File is valid, and was successfully uploaded.";

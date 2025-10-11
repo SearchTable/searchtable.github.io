@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>File Upload</title>
+    <title>Загрузить файл</title>
 </head>
 <body>
-    <h1>Upload Your File</h1>
-    <form action="/upload-endpoint" method="post" enctype="multipart/form-data">
-        <label for="myFile">Select a file:</label>
-        <input type="file" name="myFile" id="myFile" accept="image/*,.pdf" />
+    <h1>Загрузить ваш файл .png</h1>
+    <form action="/uploads" method="post" enctype="multipart/form-data">
+        <label for="myFile">Выбрать файл .png:</label>
+        <input type="file" name="myFile" id="myFile" accept="image/*,.png" />
         <br><br>
-        <button type="submit">Upload File</button>
+        <button type="submit">Загрузить файл на :  https://searchtable.github.io/uploads/</button>
     </form>
 </body>
 </html>

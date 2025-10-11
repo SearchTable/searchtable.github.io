@@ -1,41 +1,20 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Загрузить файл</title>
-</head>
-<body>
-    <h1>Загрузить ваш файл .png</h1>
-    <form action="/uploads" method="post" enctype="multipart/form-data">
-        <label for="myFile">Выбрать файл .png:</label>
-        <input type="file" name="myFile" id="myFile" accept="image/*,.png" />
-        <br><br>
-        <button type="submit">Загрузить файл на :  https://searchtable.github.io/uploads/</button>
-    </form>
-</body>
-</html>
-
-
-
-
-
-
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Документ</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
     <div class="h-64 border-solid border-black border-4 text-center" id="dropzone">
-        Drop files here
+        Перенесите файлы сюда
     </div>
 
-    <form action="test.php" enctype="multipart/form-data" method="post">
+    <form action="upload.php" enctype="multipart/form-data" method="post">
         <input type="file" name="files[]" id="files" multiple>
-        <button type="submit">Send</button>
+        <button type="submit">Отправить</button>
     </form>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
